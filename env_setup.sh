@@ -49,11 +49,14 @@ export PATH="$BIN_DIR:$INSTALL_DIR/hmmer/bin:$PATH"
 
 echo "Installing conda packages..."
 # Bioinformatics tools via conda
+conda activate fido
 conda install -c bioconda blast -y
 conda install -c conda-forge -c bioconda mmseqs2 -y
-
-# Python packages
 conda install pandas -y
+pip3 install requests
+pip install biopython
+# Python packages
+
 #conda install tensorflow -y
 #conda install scikit-learn matplotlib -y
 
