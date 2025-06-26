@@ -68,6 +68,12 @@ FIDO is a suite of scripts designed to preprocess protein sequences for downstre
 ### Retrieving sequences using NCBI BLAST.
 
 ```bash
+python src/blast.py <input_sequence_string> \
+                   -o <output_fasta_file> \
+                   [-num_aligns <number_of_alignments_to_retrieve>]
+```
+
+```bash
 python src/blast.py HSQKRVVVLGSGVIGLSSALILARKGYSVHILARDLPEDVSSQTFASPWAGANWTPFMTLTDGPRQAKWEESTFKKWVELVPTGHAMWLKGTRRFAQNEDGLLGHWYKDITPNYRPLPSSECPPGAIGVTYDTLSVHAPKYCQYLARELQKLGATFERRTVTSLEQAFDGADLVVNATGLGAKSIAGIDDQAAEPIRGQTVLVKSPCKRCTMDSSDPASPAYIIPRPGGEVICGGTYGVGDWDLSVNPETVQRILKHCLRLDPTISSDGTIEGIEVLRHNVGLRPARRGGPRVEAERIVLPLDRTKSPLSLGRGSARAAKEKEVTLVHAYGFSSAGYQQSWGAAEDVAQLVDEAFQRYHGAARE -o ./test/results/oxda_rhoto_top_50.fasta -num_aligns 50
 
 ```
