@@ -49,9 +49,10 @@ export PATH="$BIN_DIR:$INSTALL_DIR/hmmer/bin:$PATH"
 
 echo "Installing conda packages..."
 # Bioinformatics tools via conda
-conda activate fido
-conda install -c conda-forge -c bioconda mmseqs2 blast -y
+conda install -c bioconda mmseqs2 blast -y
 pip install biopython ipykernel pandas==2.1.4
+
+
 #conda install -c bioconda blast -y
 ##conda install -c conda-forge -c bioconda mmseqs2 -y
 #conda install pandas -y
