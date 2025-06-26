@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "blast_fasta_db",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/ecook/FIDO/test/results/step_1_filtered.fasta",
+  "number-of-letters": 17454,
+  "number-of-sequences": 46,
+  "last-updated": "2025-06-26T08:50:00",
+  "number-of-volumes": 1,
+  "bytes-total": 59061,
+  "bytes-to-cache": 18013,
+  "files": [
+    "blast_fasta_db.pdb",
+    "blast_fasta_db.phr",
+    "blast_fasta_db.pin",
+    "blast_fasta_db.pot",
+    "blast_fasta_db.psq",
+    "blast_fasta_db.ptf",
+    "blast_fasta_db.pto"
+  ]
+}
