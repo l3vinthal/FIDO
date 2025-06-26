@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pylab as plt
 import subprocess
 import time
 
@@ -29,7 +28,7 @@ def fasta_dict_to_file(fasta_dic, output_filename):
             try:
                 #title = i.replace(">",'').replace("sp","").split("|")[1]   
                 #output.write(">"+title+"\n"+fasta_dic[i]+"\n")
-                
+
                 #Use these next lines for NCBI sequence data.
                 title = i.replace(">",'').replace("sp","").split(" ")[0]   
                 output.write(">"+title+"\n"+fasta_dic[i]+"\n")
