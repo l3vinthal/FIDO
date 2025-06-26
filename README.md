@@ -37,8 +37,8 @@ FIDO is a suite of scripts designed to preprocess protein sequences for downstre
 
 1.  **Clone the Repository**:
     ```bash
-    git clone <repository_url>
-    cd <repository_name>
+    git clone github.com/l3vinthal/FIDO
+    cd FIDO
     ```
 
 2.  **Run the Environment Setup Script**:
@@ -49,10 +49,10 @@ FIDO is a suite of scripts designed to preprocess protein sequences for downstre
     ```
 
     This script will perform the following actions:
-    * Create an installation directory `$HOME/cookstore/programs/`.
+    * Create an installation directory `$HOME/`.
     * Create a `conda` environment named `fido` with Python 3.10.
-    * Install HMMER (version 3.4) into `$INSTALL_DIR/hmmer`.
-    * Install Clustal Omega (version 1.2.4) into `$INSTALL_DIR/clustalo`.
+    * Install HMMER (version 3.4)
+    * Install Clustal Omega (version 1.2.4)
     * Install `blast` and `mmseqs2` via Bioconda.
     * Install Python packages like `pandas` via conda.
     * Clean up downloaded archives.
@@ -61,16 +61,6 @@ FIDO is a suite of scripts designed to preprocess protein sequences for downstre
     After installation, activate the `fido` environment:
     ```bash
     conda activate fido
-    ```
-
-4.  **Add Programs to PATH (Optional, for permanent availability)**:
-    To make HMMER and Clustal Omega permanently available in your shell, add the following line to your `~/.bashrc` file:
-    ```bash
-    export PATH="$HOME/cookstore/programs/bin:$HOME/cookstore/programs/hmmer/bin:$PATH"
-    ```
-    Then, source your `~/.bashrc` file:
-    ```bash
-    source ~/.bashrc
     ```
 
 ## Usage

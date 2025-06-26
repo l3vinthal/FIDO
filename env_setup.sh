@@ -6,7 +6,7 @@
 set -e  # Exit on any error
 
 # Set installation directory
-INSTALL_DIR="$HOME/cookstore/programs/"
+INSTALL_DIR="$(pwd)/"
 BIN_DIR="$INSTALL_DIR/bin"
 
 echo "Setting up FIDO conda environment..."
