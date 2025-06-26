@@ -84,6 +84,27 @@ python run_fido.py -in <input_fasta_file> \
                    [-proj_name <project_name>] \
                    [-add_ref <reference_fasta_to_add_to_reps>]
 ```
+## Configuration
+
+Configuration
+
+The env.py file contains configurable parameters for the preprocessing steps:
+
+    * HMMER_BIN: Path to the HMMER bin directory (e.g., ./hmmer/bin).
+
+    * CLUSTAL_O: Path to the Clustal Omega executable (e.g., ./bin/clustalo).
+
+    * MIN_SEQ_LEN: Minimum sequence length for filtering (default: 0).
+
+    * MAX_SEQ_LEN: Maximum sequence length for filtering (default: 600).
+
+    * MIN_IDEN: Minimum percentage identity for BLAST filtering (default: 30).
+
+    * MAX_IDEN: Maximum percentage identity for BLAST filtering (default: 101, set greater than 100 to include identical sequences).
+
+    * QUERY_COVERAGE: Minimum query coverage for BLAST filtering (default: 50).
+
+These values can be modified in env.py to suit your specific needs. The env_setup.sh script will automatically update these paths in env.py to reflect where HMMER and Clustal Omega are installed within your project directory.
 
 ## Pipeline Steps
 
