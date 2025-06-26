@@ -65,7 +65,13 @@ FIDO is a suite of scripts designed to preprocess protein sequences for downstre
 
 ## Usage
 
-### Running the Preprocessing Workflow
+### Retrieving sequences using NCBI BLAST.
+
+```bash
+python src/blast.py HSQKRVVVLGSGVIGLSSALILARKGYSVHILARDLPEDVSSQTFASPWAGANWTPFMTLTDGPRQAKWEESTFKKWVELVPTGHAMWLKGTRRFAQNEDGLLGHWYKDITPNYRPLPSSECPPGAIGVTYDTLSVHAPKYCQYLARELQKLGATFERRTVTSLEQAFDGADLVVNATGLGAKSIAGIDDQAAEPIRGQTVLVKSPCKRCTMDSSDPASPAYIIPRPGGEVICGGTYGVGDWDLSVNPETVQRILKHCLRLDPTISSDGTIEGIEVLRHNVGLRPARRGGPRVEAERIVLPLDRTKSPLSLGRGSARAAKEKEVTLVHAYGFSSAGYQQSWGAAEDVAQLVDEAFQRYHGAARE -o /home/ecook/FIDO/test/results/oxda_rhoto_top_50.fasta -num_aligns 50
+```
+
+### Running the Mmseq2 and HMMER workflow.
 
 The main preprocessing workflow is executed via the `run_fido.py` script.
 
@@ -76,3 +82,4 @@ python run_fido.py -in <input_fasta_file> \
                    [-min_seq_id <minimum_sequence_identity_for_clustering>] \
                    [-proj_name <project_name>] \
                    [-add_ref <reference_fasta_to_add_to_reps>]
+```
