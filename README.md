@@ -104,7 +104,7 @@ The env.py file contains configurable parameters for the preprocessing steps:
 
     * QUERY_COVERAGE: Minimum query coverage for BLAST filtering (default: 50).
 
-These values can be modified in env.py to suit your specific needs. The env_setup.sh script will automatically update these paths in env.py to reflect where HMMER and Clustal Omega are installed within your project directory.
+These values can be modified in env.py to suit your specific needs. 
 
 ## Pipeline Steps
 
