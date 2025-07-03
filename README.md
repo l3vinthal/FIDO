@@ -72,7 +72,7 @@ python src/blast.py <input_sequence_string> \
                    -o <output_fasta_file> \
                    [-num_aligns <number_of_alignments_to_retrieve>]
 ```
-
+Example usage:
 ```bash
 python src/blast.py HSQKRVVVLGSGVIGLSSALILARKGYSVHILARDLPEDVSSQTFASPWAGANWTPFMTLTDGPRQAKWEESTFKKWVELVPTGHAMWLKGTRRFAQNEDGLLGHWYKDITPNYRPLPSSECPPGAIGVTYDTLSVHAPKYCQYLARELQKLGATFERRTVTSLEQAFDGADLVVNATGLGAKSIAGIDDQAAEPIRGQTVLVKSPCKRCTMDSSDPASPAYIIPRPGGEVICGGTYGVGDWDLSVNPETVQRILKHCLRLDPTISSDGTIEGIEVLRHNVGLRPARRGGPRVEAERIVLPLDRTKSPLSLGRGSARAAKEKEVTLVHAYGFSSAGYQQSWGAAEDVAQLVDEAFQRYHGAARE -o ./test/results/oxda_rhoto_top_50.fasta -num_aligns 50
 
@@ -90,6 +90,16 @@ python run_fido.py -in <input_fasta_file> \
                    [-proj_name <project_name>] \
                    [-add_ref <reference_fasta_to_add_to_reps>]
 ```
+Example usage:
+```bash
+python run_fido.py -in <input_fasta_file> \
+                   -ref <reference_fasta_file> \
+                   -out <output_directory> \
+                   [-min_seq_id <minimum_sequence_identity_for_clustering>] \
+                   [-proj_name <project_name>] \
+                   [-add_ref <reference_fasta_to_add_to_reps>]
+```
+
 ## Configuration
 
 Configuration
