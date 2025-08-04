@@ -141,4 +141,8 @@ def build_dataset(fasta_filename, clust_file, output_dir):
         output.loc[i,'cluster_ID'] = define_cluster_parent[output.loc[i,'accession'].replace('>','')]
     output.to_csv(output_dir+'final_alignment_with_clust_ids.csv')
 
-   
+def add_seq_to_fasta(seq_file, fasta_db):
+    seq = read_fasta(seq_file)
+    for i in seq.keys():
+        with open(fasta_db, 'a') as db_file:
+            db_file.write('>' + i.replace('>','') + '\n' + seq[i] + '\n')  
