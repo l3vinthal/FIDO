@@ -21,15 +21,18 @@ def main():
 
         #if args.min_seq_id
         fasta_filename = pp.blast_filter(pp.filter_seqs(args.input, args.output), args.reference, args.output)
+
+        pp.add_seq_to_fasta(args.ref_file, fasta_filename)
+
         rep_seq_filename, cluster_filename = pp.run_mmseq(fasta_filename, args.output, min_seq_id = 0.9)
 
-        if args.ref_file:
-            ref = pp.read_fasta(args.ref_file)
-            for i in ref.keys():
-                with open(rep_seq_filename, 'a') as rep_file:
-                    rep_file.write('>' + i + '\n' + ref[i] + '\n')
-
+        pp.add_seq_to_fasta(args.ref_file, rep_seq_filename)
+        
         rep_seq_aligned_filename = pp.clustalo(rep_seq_filename, args.output, CLUSTAL_O)  
+
+        #Add ref sequence to full db.
+        #pp.add_seq_to_fasta(args.ref_file, fasta_filename)
+
         hmmalignment_fasta_filename = pp.hmmer_build_and_align(rep_seq_aligned_filename, args.output, fasta_filename, HMMER_BIN)
         
         pp.build_dataset(hmmalignment_fasta_filename, cluster_filename, args.output)
