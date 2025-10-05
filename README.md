@@ -1,4 +1,4 @@
-# FIDO: Protein Sequence Preprocessing for Deep Learning
+# FIDO: Protein Sequence Preprocessing for Deep Learning by @kitten_mittens
 
 FIDO is a suite of scripts designed to preprocess protein sequences for downstream deep learning applications. It automates common bioinformatics tasks such as sequence filtering, BLAST-based filtering, sequence clustering using MMseqs2, multiple sequence alignment using Clustal Omega, and HMMER-based alignment.
 
@@ -146,4 +146,4 @@ This project is open-source and available under the MIT Open License.
 
 ## Contact
 
-For any questions, issues, or contributions, please open an issue on the GitHub repository or contact the maintainers at cookie2004@gmail.com.
+For any questions, issues, or contributions, please open an issue on the GitHub repository or contact erik.cook11@gmail.com
