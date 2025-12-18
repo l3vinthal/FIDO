@@ -90,15 +90,7 @@ python run_fido.py -in <input_fasta_file> \
                    [-proj_name <project_name>] \
                    [-add_ref <reference_fasta_to_add_to_reps>]
 ```
-Example usage:
-```bash
-python run_fido.py -in <input_fasta_file> \
-                   -ref <reference_fasta_file> \
-                   -out <output_directory> \
-                   [-min_seq_id <minimum_sequence_identity_for_clustering>] \
-                   [-proj_name <project_name>] \
-                   [-add_ref <reference_fasta_to_add_to_reps>]
-```
+
 
 ## Configuration
 
