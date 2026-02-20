@@ -12,7 +12,7 @@ import os
 
 class BlastP():
     def __init__(self, seq, output_file, hitnum = 500):
-        Blast.email = "cookie2004@gmail.com"
+        Blast.email = "myemail@gmail.com"
         print ('Emailing issues to', Blast.email)
         self.hitnum = hitnum
         self.data = self.protein_blast(seq)
