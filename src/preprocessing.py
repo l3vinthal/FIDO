@@ -105,8 +105,8 @@ def run_mmseq(fasta_filename, output_dir,
 
 def clustalo(fasta_filename, output_dir, clustalo):
     # Extract the directory path from the FASTA filename
-
-    _ = subprocess.run([clustalo + ' -i ' + fasta_filename + ' --dealign -o ' + output_dir + 'step_4_rep_seq_aligned.fasta --outfmt=fasta -force'], stderr=subprocess.STDOUT,shell=True)
+    print ("Running clustal omega....")
+    _ = subprocess.run(['clustalo -i ' + fasta_filename + ' --dealign -o ' + output_dir + 'step_4_rep_seq_aligned.fasta --outfmt=fasta -force'], stderr=subprocess.STDOUT,shell=True)
     return output_dir + 'step_4_rep_seq_aligned.fasta'
     
 def hmmer_build_and_align(rep_fasta_filename, output_dir, fasta_full_db, hmmer_bin):

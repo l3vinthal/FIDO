@@ -24,7 +24,7 @@ def main():
 
 
 
-        rep_seq_filename, cluster_filename = pp.run_mmseq(fasta_filename, args.output, min_seq_id = 0.9)
+        rep_seq_filename, cluster_filename = pp.run_mmseq(fasta_filename, args.output, min_seq_id = MIN_IDEN_CLUST)
 
         pp.add_seq_to_fasta(args.ref_file, rep_seq_filename)
         

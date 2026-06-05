@@ -42,7 +42,7 @@ echo "Installing Clustal Omega..."
 cd "$INSTALL_DIR"
 wget http://www.clustal.org/omega/clustalo-1.2.4-Ubuntu-x86_64 -O clustalo
 chmod u+x clustalo
-#mv clustalo "$INSTALL_DIR/"
+mv clustalo "$INSTALL_DIR/"
 
 # Add installation directories to PATH for this session
 export PATH="$BIN_DIR:$INSTALL_DIR/hmmer/bin:$PATH"
@@ -52,14 +52,14 @@ echo "Installing conda packages..."
 conda install -c bioconda mmseqs2 blast -y
 pip install biopython ipykernel pandas==2.1.4
 
-
-#conda install -c bioconda blast -y
+conda install -c bioconda blast -y
 ##conda install -c conda-forge -c bioconda mmseqs2 -y
-#conda install pandas -y
-#pip3 install requests
-#pip install biopython
+conda install pandas -y
+pip3 install requests
+pip install biopython
 # Python packages
 
+sudo apt-get install clustalo
 #conda install tensorflow -y
 #conda install scikit-learn matplotlib -y
 
