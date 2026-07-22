@@ -11,4 +11,4 @@ MAX_IDEN = 99 #Set greater than 100 to include identical sequences.
 QUERY_COVERAGE = 50
 
 ## MMSeq2
-MIN_IDEN_CLUST = 0.9
+MIN_IDEN_CLUST = 0.90
